@@ -1,0 +1,7 @@
+channel_type: "shopify"
+channel_url: "https://datnx-dev15.myshopify.com/"
+api:
+  password: "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"
+  shop: "datnx-dev15"
+user_id: 6
+channel_name: "Shopify15"

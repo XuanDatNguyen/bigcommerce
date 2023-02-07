@@ -1,0 +1,10 @@
+channel_type: "etsy"
+channel_url: "https://www.etsy.com/shop/devlitcommerce2"
+api:
+  access_token: "c43933ce0d73359b97758b2f3eab49"
+  access_token_secret: "970ecf7cbe"
+  etsy_user_id: "452073815"
+  name: "devlitcommerce2"
+  shop_id: "28083965"
+user_id: 6
+channel_name: "Etsy"

@@ -1,0 +1,7 @@
+channel_type: "woo"
+channel_url: "http://45.79.43.178/source_carts/wpml"
+api:
+  consumer_key: "ck_a31e196c2c5a02c56b150b32d7659b698ff5da9d"
+  consumer_secret: "cs_499d03f81f4f20629892ad9b490c50bc3405a659"
+user_id: 6
+channel_name: "Woo2"

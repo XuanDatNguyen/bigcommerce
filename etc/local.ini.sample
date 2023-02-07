@@ -1,0 +1,17 @@
+[db]
+db_port = 3306
+db_host = localhost
+db_username = root
+db_password = 123456
+db_name = datasync
+db_prefix =
+
+[limit]
+categories = 20
+products = 20
+orders = 20
+
+[config]
+categories = True
+products = True
+orders = True

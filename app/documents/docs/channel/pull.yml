@@ -1,0 +1,20 @@
+parameters:
+  - name: sync_id
+    type: int
+    required: true
+tags:
+  - channel
+responses:
+  200:
+    description: start pull data from channel to warehouse
+    schema:
+      id: Pull Channel
+      properties:
+        result:
+          type: string
+        code:
+          type: string
+        msg:
+          type: string
+        data:
+          type: integer

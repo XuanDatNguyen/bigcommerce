@@ -1,0 +1,22 @@
+parameters:
+  - name: sync_id
+    type: int
+    required: true
+  - name: end_loop
+    type: int
+    required: false
+tags:
+  - channel
+responses:
+  200:
+    description: start process
+    schema:
+      properties:
+        result:
+          type: string
+        code:
+          type: string
+        msg:
+          type: string
+        data:
+          type: integer

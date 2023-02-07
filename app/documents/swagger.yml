@@ -1,0 +1,179 @@
+---
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Datasync Api docs
+  termsOfService: ''
+  contact:
+    email: contact@litextension.com
+host: http://domain/api
+basePath: "/v1"
+tags:
+  - name: Storage
+    description: Storage data from channel to internal DB
+  - name: Sync
+    description: Sync data
+  - name: Action
+    description: Operations remote server
+paths:
+  "/pet":
+    post:
+      tags:
+        - pet
+      summary: Add a new pet to the store
+      description: ''
+      operationId: addPet
+      consumes:
+        - application/json
+        - application/xml
+      produces:
+        - application/xml
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Pet object that needs to be added to the store
+          required: true
+          schema:
+            "$ref": "#/definitions/Pet"
+      responses:
+        '405':
+          description: Invalid input
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+definitions:
+  Setup Channel:
+    type: "object"
+  Pull Channel:
+    type: "object"
+  Push Channel:
+    type: "object"
+  Main Data:
+    type: "object"
+    properties:
+      result:
+        type: string
+        enum:
+          - "success"
+          - "error"
+      data:
+        type: "array"
+      code:
+        type: string
+        description: Code if error
+      value:
+        type: float
+  StateChannelConfigPriceSync:
+    type: "object"
+    properties:
+      status:
+        type: string
+        enum:
+          - "enable"
+          - "disable"
+      direction:
+        type: string
+        description: "Price Adjustment"
+        enum:
+          - "increase"
+          - "decrease"
+      modifier:
+        type: string
+        enum:
+          - "fixed"
+          - "percent"
+      value:
+        type: float
+  StateChannelConfigQtySync:
+    type: "object"
+    properties:
+      status:
+        type: string
+        enum:
+          - "enable"
+          - "disable"
+      adjust:
+        type: float
+        description: "Qty Adjustment"
+        enum:
+          - "increase"
+          - "decrease"
+  StateChannelAuth:
+    type: "object"
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+  StateChannelConfig:
+    type: "object"
+    properties:
+      token:
+        type: string
+        description: token for cart connector
+      version:
+        type: string
+        description: "Version channel"
+      table_prefix:
+        type: string
+        description: ""
+      charset:
+        type: string
+        description: ""
+      image_category:
+        type: string
+        description: ""
+      image_product:
+        type: string
+        description: "image_product"
+      image_manufacturer:
+        type: string
+        description: "image_manufacturer"
+      api:
+        type: object
+        description: "api info"
+      auth:
+        type: object
+        description: "Basic Auth"
+        "$ref": "#/definitions/StateChannelAuth"
+      price_sync:
+        type: object
+        description: "Version connector"
+        "$ref": "#/definitions/StateChannelConfigPriceSync"
+      qty_sync:
+        type: object
+        description: "Version connector"
+        "$ref": "#/definitions/StateChannelConfigQtySync"
+  EntityProcess:
+    type: object
+    properties:
+      total:
+        type: interger
+        description: Count all entity in channel
+      imported:
+        type: interger
+        description: Count all entity imported
+      error:
+        type: interger
+        description: Count all entity import error
+      id_src:
+        type: interger
+        description: current entity id import
+      limit:
+        type: interger
+        description: the largest number of entities that can be imported
+      time_start:
+        type: interger
+        description: time start import
+      time_finish:
+        type: interger
+        description: time start import
+      time_resume:
+        type: interger
+        description: time resume import (after stop)
+      previous_imported:
+        type: interger
+        description: number of entities imported before stop
+

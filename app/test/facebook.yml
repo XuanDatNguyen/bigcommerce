@@ -1,0 +1,9 @@
+channel_type: "facebook"
+channel_url: "https://www.facebook.com/Oceansoft-test-116809120229754"
+api:
+  user_access_token: "EAAJZAxZBiGAbwBALZBuV0VTYJKF1qr9PntjyJMpZBKvvvPmZBKwWwPV7RLIJfCJhJixQs5EnrKd6ew93wHB31ZCVosMgwbvzLpsnWr2kuN761jk1uYBjQt2NUS3dRa4UE5f6ZBwyvUZBQN6LZAHrHAiTPracCM8PWerPXDmur1JEdZBwZDZD"
+  app_user_id: "1268745130144932"
+  page_name: "Oceansoft test"
+  page_id: "116809120229754"
+user_id: 5
+channel_name: "Facebook"

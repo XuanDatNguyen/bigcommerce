@@ -1,0 +1,62 @@
+[local]
+port = 8181
+mode = live
+is_local = True
+private_key = 7cff4a7e8fbadfgdfg53a1435da0c9102beacd
+debug = True
+;daily|single|custom
+app_log = daily
+;if all_log = custom
+log_file = xxx
+database_engine = mongo
+storage_engine = google
+[server]
+ip = 127.0.0.1
+api_url = http://127.0.0.1:8000/
+private_key = dfgdfg
+[sendgrid]
+email_from = litextension@com.vn
+api_key =
+
+[mongo]
+db_driver = mongodb+srv://root:<password>@cluster0.5wdfgdfgdbdk.mongodb.net/<dbname>?retryWrites=true&w=majority
+db_password = 123456dfgdgdaA
+;db_driver = mongodb+srv://dbadmin:<password>@clusgdgfdgter1.l1dbo.gcp.mongodb.net/test
+;db_password = 74MBAsIpVdfgdfgzVmCS4B
+db_name = datasync_live
+
+[cart]
+private_key = dfgdf
+url = http://localhost:8080
+
+[etsy]
+oauth_consumer_key = qqq
+oauth_consumer_secret = ggg
+
+[image_storage]
+domain = http://images.litcommerce.com
+bucket_name = images.litcommerce.com
+config_file = image.google.cloud.credentials.json
+
+[file_storage]
+domain = http://images.litcommerce.com
+bucket_name = images.litcommerce.com
+config_file = image.google.cloud.credentials.json
+
+[wish]
+client_id = yyy
+client_secret = xxx
+redirect_uri = http://0.0.0.0:8000/merchant/wish/callback/
+mode = test
+
+[google]
+client_id = xxx
+client_secret = yyy
+
+[amazon]
+access_key_id = xxx
+secret_key = yyy
+
+[google]
+client_id = xxx
+client_secret = yyy

@@ -1,0 +1,9 @@
+channel_type: "google"
+channel_url: ""
+api:
+  access_token: "ya29.A0AfH6SMCBSrTTb_Rgb6duWz1KVoF-KpVj2AS2ftUpkJ5uxgVj93cS9_vgdwB5ZtOlpKqrrieq8LUawKL1GbAs5sWM1ixwomanPETdRffoyBbeUKGzCiGO0rS7uGbaYkT_1duziwH-vHdpF--00HehgDyCs1k-5RdJhleE0csA814"
+  refresh_token: "1//0eoUWwNosEUxRCgYIARAAGA4SNwF-L9IrAEn9dVHIzRseqHfMGFnZr-oVp0NxZnXxNohhkoz-6uoXt1ijED2XWr__KKzG51B689k"
+  merchant_id: "284319343"
+  token_type: "Bearer"
+user_id: 1
+channel_name: "Google Shopping"

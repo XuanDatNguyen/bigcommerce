@@ -1,0 +1,8 @@
+channel_type: "bigcommerce"
+channel_url: "https://store-4rwa0aomhh.mybigcommerce.com"
+api:
+  shop: 'datnx-big2'
+  api_path: "https://api.bigcommerce.com/stores/4rwa0aomhh/v3/"
+  access_token: "e8v7mdggy9o1xsvtzm3oxonx1vxzuv5"
+user_id: 10
+channel_name: "Bigcommerce2"

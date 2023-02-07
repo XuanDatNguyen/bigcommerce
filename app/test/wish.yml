@@ -1,0 +1,7 @@
+channel_type: "wish"
+channel_url: ""
+api:
+  access_token: "192da4b210aa4e569147c7507f41ae19"
+  merchant_id: "5f6ad35c8970c7003121e38e"
+user_id: 1
+channel_name: "Wish"

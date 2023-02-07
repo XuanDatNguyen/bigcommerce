@@ -1,0 +1,20 @@
+parameters:
+  - name: sync_id
+    type: int
+    required: true
+tags:
+  - channel
+responses:
+  200:
+    description: start push data from warehouse to channel
+    schema:
+      id: Push Channel
+      properties:
+        result:
+          type: string
+        code:
+          type: string
+        msg:
+          type: string
+        data:
+          type: integer

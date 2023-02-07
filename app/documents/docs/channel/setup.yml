@@ -1,0 +1,37 @@
+parameters:
+  - name: channel_type
+    type: string
+    enum: [ 'shopify', 'amazone', 'ebay' ]
+    required: true
+  - name: channel_url
+    type: string
+    required: false
+  - name: api
+    type: string
+    required: false
+  - name: user_id
+    type: int
+    required: true
+tags:
+  - channel
+responses:
+  200:
+    description: return channel id
+    schema:
+      id: Setup Channel
+      properties:
+        result:
+          type: string
+        code:
+          type: string
+        msg:
+          type: string
+        data:
+          type: object
+          properties:
+            channel_id:
+              type: integer
+            process_id:
+              type: integer
+            state_id:
+              type: string
