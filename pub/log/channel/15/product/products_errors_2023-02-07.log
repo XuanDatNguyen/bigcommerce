@@ -1,0 +1,10 @@
+2023/02/07 15:51:14: 
+products_errors 63e1adf71ff9b1f4b98e4c2b: Traceback (most recent call last):
+  File "/home/james/Desktop/litc/core_dev/datasync/controllers/channel.py", line 1108, in push
+    import_data = fn_import(None, main, ext_data)
+  File "/home/james/Desktop/litc/core_dev/datasync/models/channel.py", line 1219, in product_channel_import
+    return self.product_import(convert, product, products_ext)
+  File "/home/james/Desktop/litc/core_dev/datasync/models/channels/bigcommerce.py", line 296, in product_import
+    product_id = response['data']['id']
+KeyError: 'data'
+----------------------------------------------------------------------------------------------------
